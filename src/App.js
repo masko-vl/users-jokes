@@ -5,7 +5,7 @@ class App extends Component {
   state={
     name:'',
     isLoaded:false,
-    joke:''
+    
   }
  changeName = (event) => {
       //to recover the input id and put the input value into state
@@ -31,6 +31,7 @@ class App extends Component {
   return (
     <div>
     <form >
+      <h1>REUSED EXCERSICE: Welcome to Netlify !</h1>
         <label htmlFor='name'>Name:</label>
         <input type ='text' value ={this.state.name} onChange={this.changeName}></input>
         {/* <button value={this.state.name} onClick={this.keepName}>Log in</button> */}
